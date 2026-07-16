@@ -14,7 +14,7 @@ resource "aws_subnet" "dev_subnet" {
     Name = "dev-subnet"
   }
 }
-
+  
 #terraform target command is used to apply the changes to specific resources in the configuration. It allows you to selectively apply changes to certain resources without affecting the entire infrastructure. This can be useful when you want to make changes to a specific resource or set of resources without impacting other parts of your infrastructure.
 
 ex: terraform plan --target=aws_vpc.dev_vpc
