@@ -6,11 +6,7 @@ variable "ami_id" {
 variable "instance_type" {
   description = "The instance type for ec2 instance"
   type = string
-}resource "aws_instance" "instance"{
-ami= "ami-01edba92f9036f76e"
-instance_type = "t3.micro"
-tags = {
-    Name="sayeed"
+  default = ""
 }
 variable "tags" {
   description = "the tags for ec2 instance"
@@ -18,6 +14,3 @@ variable "tags" {
   default = ""
 }
 
-
-
-#terraform apply -var="ami_id 

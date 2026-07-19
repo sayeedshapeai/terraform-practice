@@ -9,5 +9,3 @@ resource "aws_vpc" "name" {
 resource"aws_s3_bucket" "my_bucket" {
   bucket = "my-unique-bucket-name-1234567890"
 }
-
-#dependency block 
